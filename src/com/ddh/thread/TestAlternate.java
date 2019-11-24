@@ -7,6 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public class TestAlternate {
     public static void main(String[] args) {
         Alternate alternate = new Alternate();
+        System.out.println();
         final int count = 10;
         new Thread(() -> {
             for (int i = 0; i < count; i++) {
